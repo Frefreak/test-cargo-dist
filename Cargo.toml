@@ -1,0 +1,12 @@
+[package]
+name = "asdf"
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/Frefreak/test-cargo-dist"
+
+[dependencies]
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
